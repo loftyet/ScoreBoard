@@ -12,11 +12,7 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import org.achartengine.ChartFactory;
-import org.achartengine.model.XYMultipleSeriesDataset;
-import org.achartengine.model.XYSeries;
-import org.achartengine.renderer.XYMultipleSeriesRenderer;
-import org.achartengine.renderer.XYSeriesRenderer;
+import org.svcba.scoreboard.dialog.ActionRemoveActivity;
 import org.svcba.scoreboard.dialog.AssistActivity;
 import org.svcba.scoreboard.dialog.OffCourtPlayerActivity;
 import org.svcba.scoreboard.dialog.ReboundActivity;
@@ -26,15 +22,12 @@ import org.svcba.scoreboard.dialog.ShootResultActivity;
 import org.svcba.scoreboard.dialog.StatActivity;
 import org.svcba.scoreboard.dialog.StealActivity;
 import org.svcba.scoreboard.dialog.TimeoutActivity;
-import org.svcba.scoreboard.dialog.ActionRemoveActivity;
 import org.svcba.scoreboard.model.Action;
 import org.svcba.scoreboard.model.Game;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -43,13 +36,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemLongClickListener;
-import android.widget.AdapterView;
 
 public class NormalActivity extends Activity
 {
@@ -139,6 +132,9 @@ public class NormalActivity extends Activity
 		tx = (TextView)findViewById(R.id.tx_awayteam_name);
 		tx.setText(_game.getAwayTeam().getName());
 
+		// a little help reminding
+		Toast.makeText(this, getResources().getString(R.string.normal_help),Toast.LENGTH_LONG).show();
+		
 		updateScore();
 		updateTimeoutFoul();
 		updateTime();
@@ -151,29 +147,26 @@ public class NormalActivity extends Activity
 				startActivityForResult(intent, REQUEST_TIMEOUT_TEAM);
 			}
 		});
-		btn = (Button)findViewById(R.id.btn_sub);
+		
+
+		btn = (Button)findViewById(R.id.btn_sub_off);
 		btn.setOnClickListener(new OnClickListener(){
 			public void onClick(View v)
 			{
-				try {
-			        FileOutputStream fos = openFileOutput(filename, MODE_WORLD_WRITEABLE );
-			        //GZIPOutputStream gzos = new GZIPOutputStream(fos);
-			        ObjectOutputStream out = new ObjectOutputStream(fos);
-			        out.writeObject(_game);
-			        out.flush();
-			        out.close();
-			     }
-			     catch (IOException e) {
-			    	 e.printStackTrace();
-			         System.out.println(e); 
-			     }
-				// Here we need to save the results. 
-				
-				//Intent intent = new Intent(v.getContext(), ShootPlayerActivity.class);
-				//startActivityForResult(intent, REQUEST_SUB_OFF);
+				Intent intent = new Intent(v.getContext(), ShootPlayerActivity.class);
+				startActivityForResult(intent, REQUEST_SUB_OFF);
 			}
 		});
-
+		
+		btn = (Button)findViewById(R.id.btn_sub_on);
+		btn.setOnClickListener(new OnClickListener(){
+			public void onClick(View v)
+			{
+				Intent intent = new Intent(v.getContext(), OffCourtPlayerActivity.class);
+				startActivityForResult(intent, REQUEST_SUB_ON);
+			}
+		});
+		
 		btn = (Button)findViewById(R.id.btn_foul);
 		btn.setOnClickListener(new OnClickListener(){
 			public void onClick(View v)
@@ -220,6 +213,27 @@ public class NormalActivity extends Activity
 			}
 
 		});
+		
+		btn = (Button)findViewById(R.id.btn_save);
+		btn.setOnClickListener(new OnClickListener(){
+			public void onClick(View v)
+			{
+				try {
+			        FileOutputStream fos = openFileOutput(filename, MODE_WORLD_WRITEABLE );
+			        //GZIPOutputStream gzos = new GZIPOutputStream(fos);
+			        ObjectOutputStream out = new ObjectOutputStream(fos);
+			        out.writeObject(_game);
+			        out.flush();
+			        out.close();
+			     }
+			     catch (IOException e) {
+			    	 e.printStackTrace();
+			         System.out.println(e); 
+			     }
+			     Toast.makeText(v.getContext(),"Saved",Toast.LENGTH_SHORT).show();
+			}
+		});
+		
 		_timer.schedule(_timertask, 1000, 1000);
 	}
 

@@ -33,8 +33,6 @@ public class StatActivity extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		
-		
-		
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		setContentView(R.layout.dlg_stat);
@@ -221,7 +219,7 @@ public class StatActivity extends Activity
 	    {
 			final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);		 
 	        emailIntent.setType("plain/text");
-	        emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"ztenghui@gmail.com;biomemsgao@gmail.com;greatsvcba@gmail.com"});
+	        emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"ztenghui@gmail.com;2010.longhorn@gmail.com;ljiang510@gmail.com"});
 	
 	        emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, emailTitle + "Game Result " + getDateTime());
 	

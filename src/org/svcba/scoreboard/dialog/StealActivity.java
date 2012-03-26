@@ -28,11 +28,15 @@ public class StealActivity extends Activity
 		SimpleAdapter sa;
 		if (team == Action.HOME)
 		{
-			sa = new SimpleAdapter(this, game.getHomeTeam().getOnCourt(),R.layout.list_player,new String[]{"name","avator"},new int[]{R.id.list_player_name,R.id.list_player_img});
+//			sa = new SimpleAdapter(this, game.getHomeTeam().getOnCourt(),R.layout.list_player,new String[]{"name","avator"},new int[]{R.id.list_player_name,R.id.list_player_img});
+			sa = new SimpleAdapter(this, game.getHomeTeam().getOnCourt(),R.layout.list_player,new String[]{"name"},new int[]{R.id.list_player_name});
+
 		}
 		else
 		{
-			sa = new SimpleAdapter(this, game.getAwayTeam().getOnCourt(),R.layout.list_player,new String[]{"name","avator"},new int[]{R.id.list_player_name,R.id.list_player_img});
+//			sa = new SimpleAdapter(this, game.getAwayTeam().getOnCourt(),R.layout.list_player,new String[]{"name","avator"},new int[]{R.id.list_player_name,R.id.list_player_img});
+			sa = new SimpleAdapter(this, game.getAwayTeam().getOnCourt(),R.layout.list_player,new String[]{"name"},new int[]{R.id.list_player_name});
+
 		}
 		ListView lv = (ListView)findViewById(R.id.list_steal);
 		lv.setAdapter(sa);

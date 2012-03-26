@@ -48,7 +48,7 @@ public class Team implements Serializable
 	
 	public List<Map<String, Object>> getOnCourt()
 	{
-		return _players;
+		return _oncourt;
 	}
 	
 	public List<Map<String, Object>> getOffCourt()
@@ -60,6 +60,7 @@ public class Team implements Serializable
 		_players.add(player);
 		_offcourt.add(player);
 	}
+
 	public void moveToCourt(int pos)
 	{
 		boolean full = true;

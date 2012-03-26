@@ -27,7 +27,9 @@ public class ShootPlayerActivity extends Activity
 		setContentView(R.layout.dlg_shoot);
 		Game game = ((SVCBAApp)getApplicationContext()).getGame();
 		ListView lv = (ListView)findViewById(R.id.hometeam_selection);
-		SimpleAdapter sa = new SimpleAdapter(this, game.getHomeTeam().getOnCourt(),R.layout.hometeam_selection, new String[]{"name","avator"},new int[]{R.id.hometeam_selection_name,R.id.hometeam_selection_img});
+		//SimpleAdapter sa = new SimpleAdapter(this, game.getHomeTeam().getOnCourt(),R.layout.hometeam_selection, new String[]{"name","avator"},new int[]{R.id.hometeam_selection_name,R.id.hometeam_selection_img});
+		SimpleAdapter sa = new SimpleAdapter(this, game.getHomeTeam().getOnCourt(),R.layout.hometeam_selection, new String[]{"name"},new int[]{R.id.hometeam_selection_name});
+		
 		lv.setAdapter(sa);
 		lv.setOnItemClickListener(new OnItemClickListener(){
 
@@ -42,7 +44,9 @@ public class ShootPlayerActivity extends Activity
 			
 		});
 		lv = (ListView)findViewById(R.id.awayteam_selection);
-		sa = new SimpleAdapter(this, game.getAwayTeam().getOnCourt(), R.layout.awayteam_selection, new String[]{"name", "avator"}, new int[]{R.id.awayteam_selection_name, R.id.awayteam_selection_img});
+		//sa = new SimpleAdapter(this, game.getAwayTeam().getOnCourt(), R.layout.awayteam_selection, new String[]{"name", "avator"}, new int[]{R.id.awayteam_selection_name, R.id.awayteam_selection_img});
+		sa = new SimpleAdapter(this, game.getAwayTeam().getOnCourt(), R.layout.awayteam_selection, new String[]{"name"}, new int[]{R.id.awayteam_selection_name});
+		
 		lv.setAdapter(sa);
 		lv.setOnItemClickListener(new OnItemClickListener(){
 

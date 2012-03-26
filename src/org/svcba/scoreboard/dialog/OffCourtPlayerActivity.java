@@ -29,11 +29,15 @@ public class OffCourtPlayerActivity extends Activity
 		int team = intent.getIntExtra("team", 0);
 		if (team == ShootPlayerActivity.RESULT_HOMETEAM)
 		{
-			sa = new SimpleAdapter(this, game.getHomeTeam().getOffCourt(),R.layout.list_player,new String[]{"name","avator"},new int[]{R.id.list_player_name,R.id.list_player_img});
+//			sa = new SimpleAdapter(this, game.getHomeTeam().getOffCourt(),R.layout.list_player,new String[]{"name","avator"},new int[]{R.id.list_player_name,R.id.list_player_img});
+			sa = new SimpleAdapter(this, game.getHomeTeam().getOffCourt(),R.layout.list_player,new String[]{"name"},new int[]{R.id.list_player_name});
+
 		}
 		else
 		{
-			sa = new SimpleAdapter(this, game.getAwayTeam().getOffCourt(),R.layout.list_player,new String[]{"name","avator"},new int[]{R.id.list_player_name,R.id.list_player_img});
+//			sa = new SimpleAdapter(this, game.getAwayTeam().getOffCourt(),R.layout.list_player,new String[]{"name","avator"},new int[]{R.id.list_player_name,R.id.list_player_img});
+			sa = new SimpleAdapter(this, game.getAwayTeam().getOffCourt(),R.layout.list_player,new String[]{"name"},new int[]{R.id.list_player_name});
+
 		}
 		lv.setAdapter(sa);
 		lv.setOnItemClickListener(new OnItemClickListener(){
