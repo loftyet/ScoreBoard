@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="team_color_array">
+	    <item>深色</item>
+		<item>白色</item>
+	</string-array>
+
+	<string-array name="team_name_array">
+		<item>上海交大</item>
+		<item>大成律所</item>
+		<item>ILG</item>
+		<item>台交大</item>
+		<item>Tri-City-A</item>
+		<item>Wolfpack</item>
+		<item>Stanford</item>
+		<item>青龙</item>
+		<item>玄武／精算子</item>
+		<item>No9</item>
+		<item>YoungBlood</item>
+		<item>Kubila</item>
+		<item>Tri-City Dragon</item>
+		<item>未名</item>
+		<item>Gladiators</item>
+		<item>Titans</item>
+	</string-array>
+	
+	<string-array name="ShanghaiJiaoDa">
+		<item>李鸿鸣 Joseph</item>
+		<item>李旭 Kevin</item>
+		<item>王栋 Dong</item>
+		<item>叶榕 Rong</item>
+		<item>叶玮 Scott</item>
+		<item>黄伯凯 Pokai</item>
+		<item>孙文胜 Steve</item>
+		<item>张彤 Tony Cheung</item>
+		<item>邱鈞揚 Sean</item>
+		<item>Michael Huang</item>
+		<item>Jason Bi</item>
+		<item>浦飒海,Sahi</item>
+		<item>Alex Lin</item>
+		<item>Ed Chang</item>
+		<item>Parkson</item>
+	</string-array>
+	
+	<string-array name="DaChengLvSuo">
+		<item>liu jiang xia</item>
+		<item>xiao lai</item>
+		<item>zhang yue</item>
+		<item>xiao qian</item>
+		<item>da zhuang</item>
+		<item>zhao yi</item>
+		<item>da ke</item>
+		<item>cui chuang</item>
+		<item>zhang chengbo</item>
+		<item>sun he</item>
+		<item>Ricky</item>
+	</string-array>
+	
+	<string-array name="ILG">
+		<item>周英</item>
+		<item>吴家豪 Clifton</item>
+		<item>Jeff Luo</item>
+		<item>Alex Deng</item>
+		<item>James Lee</item>
+		<item>王圣淳 </item>
+		<item>付甄</item>
+		<item>吕健</item>
+		<item>蔡云合</item>
+		<item>郭胜</item>
+		<item>于龙</item>
+	</string-array>
+	
+	<string-array name="TaiJiaoDa">
+		<item>Yi-Shu Peng</item>
+		<item>Hungtao Chou</item>
+		<item>Jimmy Yu</item>
+		<item>Angus Lee</item>
+		<item>Chengtao Chu</item>
+		<item>Philip Tsai</item>
+		<item>Peng Hsu</item>
+		<item>Jim Wang</item>
+		<item>Will Lu</item>
+		<item>Winston Chu</item>
+		<item>Ray Chung</item>
+		<item>Jason</item>
+		<item>Jess</item>
+	</string-array>
+	
+	<string-array name="Tri_City_A">
+		<item>Jackie</item>
+		<item>Dennis</item>
+		<item>Johnny</item>
+		<item>Steven</item>
+		<item>Kent</item>
+		<item>Will</item>
+		<item>Jon</item>
+		<item>Stephen</item>
+		<item>Scott</item>
+		<item>Rick</item>
+		<item>Kai Yang</item>
+	</string-array>
+	
+	<string-array name="Wolfpack">
+		<item>Kailun Shi (施凯伦)</item>
+		<item>Henry Lin (林浩)</item>
+		<item>Sprite Zhang</item>
+		<item>Alex Au</item>
+		<item>Jefferey Hsu</item>
+		<item>Ken Lam</item>
+		<item>Aaron Lin (林峯揚)</item>
+		<item>Stanley Hsu</item>
+		<item>Bailey Wei</item>
+	</string-array>
+	
+	
+	<string-array name="Stanford">
+		<item>Yao Yuan</item>
+		<item>Liu Jing</item>
+		<item>Lou Yulin</item>
+		<item>Zhang Yujun</item>
+		<item>Liu Yijin</item>
+		<item>Liu Xiaoge</item>
+		<item>Hu Te</item>
+		<item>Wu Ziran</item>
+		<item>Yu Tianhua</item>
+		<item>Zou Yaozhong</item>
+		<item>Meng Jie</item>
+		<item>Zhao Zhao</item>
+		<item>高加贝</item>
+	</string-array>
+	
+	<string-array name="QingLong">
+		<item>闫震宇</item>
+		<item>Terry</item>
+		<item>许晖</item>
+		<item>章俊良</item>
+		<item>朱腾辉</item>
+		<item>邓少伟</item>
+		<item>孙世双</item>
+		<item>李玥</item>
+		<item>zhang lin</item>
+		<item>Li Zheng</item>
+		<item>何日晖</item>
+		<item>Stephen Tse</item>
+	</string-array>
+	
+	<string-array name="Xuanwu">
+		<item>Kelvin Chu</item>
+		<item>Fanrf</item>
+		<item>Kenneth Lee</item>
+		<item>Ye Peng</item>
+		<item>TC</item>
+		<item>Gordon</item>
+		<item>QiaSi Luo</item>
+		<item>Tom</item>
+		<item>Bing Zhao</item>
+	</string-array>
+	
+	<string-array name="No9">
+		<item>Bo Tao</item>
+		<item>Jiangbo Miao</item>
+		<item>Cheng Zhang</item>
+		<item>Mason Wang</item>
+		<item>Yiran An</item>
+		<item>Wenfeng Zhao</item>
+		<item>黎巍 Wei</item>
+		<item>Yan Zhang</item>
+		<item>Zhiyong Huang</item>
+		<item>Rui Jia</item>
+		<item>Tianxiao Chen</item>
+		<item>Wei Hong</item>
+		<item>Shu Du</item>
+		<item>黄宇</item>
+	</string-array>
+	
+	<string-array name="YoungBlood">
+		<item>Fenghua Li</item>
+		<item>Steven Lee</item>
+		<item>Henry</item>
+		<item>Tao Li (Big)</item>
+		<item>Chiyan Chen</item>
+		<item>Allen Liu</item>
+		<item>Aaron Chen</item>
+		<item>Jeffery</item>
+		<item>Yungang Wang</item>
+		<item>Yu Song</item>
+		<item>Gang Dong</item>
+		<item>Jackson Ding</item>
+		<item>Chang Liu</item>
+		<item>Liang Bin</item>
+		<item>Long Yu</item>
+	</string-array>
+	
+	<string-array name="Kubila">
+		<item>Gary Han</item>
+		<item>John Wu</item>
+		<item>Yen Chung</item>
+		<item>David Tong</item>
+		<item>Sting Lee</item>
+		<item>Jimmy Wang</item>
+		<item>Kwan Yu</item>
+		<item>Steve Chen</item>
+		<item>Shane</item>
+		<item>JingWei Xian</item>
+	</string-array>
+	
+	<string-array name="Tri_City_Dragon">
+		<item>Paul Tong</item>
+		<item>Casey Yeh</item>
+		<item>Kevin Kuang</item>
+		<item>Ken Chih </item>
+		<item>Hubert Shaw</item>
+		<item>Gallon Yang</item>
+		<item>Tony Chiang</item>
+		<item>Michael Mou</item>
+		<item>Wingo Lee</item>
+		<item>Alex Chen</item>
+		<item>Edward Ma</item>
+		<item>Lloyd Lim</item>
+		<item>Justin Hsiao</item>
+		<item>Wayne Wu</item>
+		<item>Jason Liu</item>
+	</string-array>
+	
+	<string-array name="Weiming">
+		<item>Yao zhen</item>
+		<item>Yu bing</item>
+		<item>Yanchen Zhang</item>
+		<item>Zhang Gong</item>
+		<item>Wang Jin</item>
+		<item>Jiang Jianhong</item>
+		<item>Bill Huang</item>
+		<item>Wu Qiang</item>
+		<item>Wu JinQiang</item>
+		<item>Scott Liu</item>
+		<item>Frank Yao</item>
+	</string-array>
+	
+	<string-array name="Gladiators">
+		<item>Eugene Li</item>
+		<item>Jason Cheng</item>
+		<item>Chia-Ching Lin </item>
+		<item>Penny Tseng</item>
+		<item>Ben Wang</item>
+		<item>Eric Yang</item>
+		<item>Kevin Chang</item>
+		<item>Meng Chua</item>
+		<item>James Qiu</item>
+		<item>CS Liu</item>
+		<item>Norman Lau</item>
+		<item>Nathan Hu</item>
+	</string-array>
+	
+	<string-array name="Titans">
+		<item>Micheal Shiuan</item>
+		<item>Kevin Chu</item>
+		<item>Albert Chiang</item>
+		<item>Paul Tien</item>
+		<item>Jonathan Yeh</item>
+		<item>Bryant Chou</item>
+		<item>Bowen Wu</item>
+		<item>Peter Yang</item>
+		<item>Andy</item>
+		<item>Alan</item>
+	</string-array>
+	
+	<string-array name="test_team_name_array">
+		<item>Knicks</item>
+		<item>Spurs</item>
+	</string-array>
+	
+	<string-array name="knicks">
+		<item>7 Carmelo Anthony</item>
+		<item>20 Mike Bibby</item>	 
+		<item>6 Tyson Chandler</item>
+		<item>85 Baron Davis</item>
+		<item>23 Toney Douglas</item>
+		<item>2 Landry Fields</item>
+		<item>55 Josh Harrellson</item>
+		<item>9 Jared Jeffries</item>
+		<item>44 Jerome Jordan</item>
+		<item>17 Jeremy Lin</item>
+		<item>16 Steve Novak</item>
+		<item>21 Iman Shumpert</item>
+		<item>8 J.R. Smith</item>
+		<item>1 Amar\'e Stoudemire</item>
+		<item>5 Bill Walker</item>
+	</string-array>
+	
+	<string-array name="spurs">
+	    <item>25 James Anderson</item>
+		<item>45 DeJuan Blair</item>
+		<item>15 Matt Bonner</item>
+		<item>23 Eric Dawson</item>
+		<item>21 Tim Duncan</item>
+		<item>11 T.J. Ford</item>
+		<item>20 Manu Ginobili</item>
+		<item>4	Daniel Green</item>
+		<item>24 Richard Jefferson</item>
+		<item>5	Cory Joseph	</item>
+		<item>2	Kawhi Leonard</item>
+		<item>14 Gary Neal</item>
+		<item>9	Tony Parker</item>
+		<item>22 Tiago Splitter</item>
+	</string-array>
+	
+</resources>

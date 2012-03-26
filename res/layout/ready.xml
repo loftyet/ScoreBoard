@@ -14,30 +14,35 @@
 			android:id="@+id/tx_hometeam"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textSize="36px"
+			android:textSize="36dip"
 			android:layout_gravity="left"
 			android:layout_weight="1"
 		/>
+
 		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:textSize="20px"
-			android:text="VS"
-			android:layout_gravity="center"
-		/>
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:text="VS"
+		    android:textColor="@color/title_background"
+		    android:textSize="42dip" />
+
 		<TextView
 			android:id="@+id/tx_awayteam"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:textSize="36px"
+			android:textSize="36dip"
 			android:layout_weight="1"
 			android:gravity="right"
 		/>
 	</LinearLayout>
+
 	<Button
-		android:id="@+id/btn_start"
-		android:text="@string/start"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-	/>
+	    android:id="@+id/btn_start"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal|center_vertical"
+	    android:layout_marginTop="100dip"
+	    android:text="@string/start" />
+
 </LinearLayout>

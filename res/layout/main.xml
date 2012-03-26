@@ -37,20 +37,39 @@
     					android:layout_height="wrap_content"
     					android:prompt="@string/spin_prompt_hometeam_color"
     				/>
+
+    				<TextView
+    				    android:layout_width="fill_parent"
+    				    android:layout_height="wrap_content"
+    				    android:gravity="center_horizontal|center_vertical"
+    				    android:text="@string/starting_lineup"
+    				    android:textSize="20dp" />
+
     				<GridView
-    					android:id="@+id/grid_hometeam_starting_lineup"
-    					android:layout_width="fill_parent"
-    					android:layout_height="wrap_content"
-    					android:numColumns="5"
-    					android:verticalSpacing="5px"
-    					android:horizontalSpacing="5px"
-    				/>
+    				    android:id="@+id/grid_hometeam_starting_lineup"
+    				    android:layout_width="fill_parent"
+    				    android:layout_height="wrap_content"
+    				    android:background="@color/cl_score_lead"
+    				    android:horizontalSpacing="5dp"
+    				    android:numColumns="5"
+    				    android:verticalSpacing="5dp" />
+
+					<TextView
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:background="@color/background1"
+					    android:gravity="center_horizontal|center_vertical"
+					    android:text="@string/roster"
+					    android:textColor="@color/cl_score_lead"
+					    android:textSize="20dp" />
+
     				<ListView
-    					android:id="@+id/list_hometeam_player"
-    					android:layout_width="fill_parent"
-    					android:layout_height="fill_parent"
-    					android:contentDescription="@string/hometeam_player"
-    				/>
+    				    android:id="@+id/list_hometeam_player"
+    				    android:layout_width="fill_parent"
+    				    android:layout_height="fill_parent"
+    				    android:background="@color/action_bar_background"
+    				    android:contentDescription="@string/hometeam_player" />
+
     			</LinearLayout>
     			<LinearLayout
     				android:id="@+id/tab_awayteam"
@@ -70,18 +89,34 @@
     					android:layout_height="wrap_content"
     					android:prompt="@string/spin_prompt_awayteam_color"
     				/>
+    				<TextView
+    				    android:layout_width="fill_parent"
+    				    android:layout_height="wrap_content"
+    				    android:gravity="center_horizontal|center_vertical"
+    				    android:text="@string/starting_lineup"
+    				    android:textColor="@color/title_background"
+    				    android:textSize="20dp" />
     				<GridView
     					android:id="@+id/grid_awayteam_starting_lineup"
     					android:layout_width="fill_parent"
     					android:layout_height="wrap_content"
     					android:numColumns="5"
-    					android:verticalSpacing="5px"
-    					android:horizontalSpacing="5px"
+    					android:verticalSpacing="5dp"
+    					android:horizontalSpacing="5dp"
+    					android:background="@color/cl_score_lead"
     				/>
+    				<TextView
+    				    android:layout_width="fill_parent"
+    				    android:layout_height="wrap_content"
+    				    android:gravity="center_horizontal|center_vertical"
+    				    android:text="@string/roster"
+    				    android:textColor="@color/title_background"
+    				    android:textSize="20dp" />
     				<ListView
     					android:id="@+id/list_awayteam_player"
     					android:layout_width="fill_parent"
     					android:layout_height="fill_parent"
+    					android:background="@color/action_bar_background"
     					android:contentDescription="@string/awayteam_player"
     				/>
 
@@ -96,55 +131,66 @@
     					android:id="@+id/tx_game_quarter"
     					android:layout_width="fill_parent"
     					android:layout_height="wrap_content"
+    					android:paddingLeft="5dip"
+    					android:paddingTop = "5dip"
     					android:text="@string/game_quarter"
     				/>
     				<TextView
     					android:id="@+id/tx_game_quarter_length"
     					android:layout_width="fill_parent"
     					android:layout_height="wrap_content"
+    					android:paddingLeft = "5dip"
     					android:text="@string/game_quarter_length"
     				/>
     				<TextView
     					android:id="@+id/tx_game_foulout"
     					android:layout_width="fill_parent"
     					android:layout_height="wrap_content"
+    					android:paddingLeft = "5dip"
     					android:text="@string/game_foulout"
     				/>
     				<TextView
     					android:id="@+id/tx_game_teamfoul_threshold_1"
     					android:layout_width="fill_parent"
     					android:layout_height="wrap_content"
+    					android:paddingLeft = "5dip"
     					android:text="@string/game_teamfoul_threshold_1"
     				/>
     				<TextView
     					android:id="@+id/tx_game_teamfoul_threshold_2"
     					android:layout_width="fill_parent"
     					android:layout_height="wrap_content"
+    					android:paddingLeft = "5dip"
     					android:text="@string/game_teamfoul_threshold_2"
     				/>
     				<TextView
     					android:id="@+id/tx_game_stopwatch"
     					android:layout_width="fill_parent"
     					android:layout_height="wrap_content"
+    					android:paddingLeft = "5dip"
     					android:text="@string/game_stopwatch"
     				/>
     				<TextView
     					android:id="@+id/tx_game_timeout"
     					android:layout_width="fill_parent"
     					android:layout_height="wrap_content"
+    					android:paddingLeft = "5dip"
     					android:text="@string/game_timeout"
     				/>
     				<TextView
     					android:id="@+id/tx_game_overtime"
     					android:layout_width="fill_parent"
     					android:layout_height="wrap_content"
+    					android:paddingLeft = "5dip"
     					android:text="@string/game_overtime"
     				/>
     				<Button
     					android:id="@+id/btn_setup_done"
-    					android:layout_height="fill_parent"
+    					android:layout_height="wrap_content"
     					android:layout_width="fill_parent"
+    					android:layout_marginTop="30dip"
     					android:text="@string/btn_setup_done"
+    					android:textSize = "25dip"
     				/>
     			</LinearLayout>
     		</FrameLayout>

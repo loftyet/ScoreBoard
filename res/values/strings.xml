@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <string name="app_name">硅谷华人篮球协会-记分板v0.3</string>
+<string name="app_name">Basketball Scoreboard</string>
 <string name="btn_setup_done">比赛设置好了</string>
 <string name="hometeam_name_hint">第一个参赛队伍名称</string>
 <string name="spin_prompt_hometeam">主场球队</string>
-<string-array name="team_name_array"><item>青龙</item>
-<item>临时工</item>
-<item>朱雀</item>
-<item>玄武</item>
-<item>第九</item>
-<item>伯克利</item>
-<item>SJSU</item>
-<item>泰坦</item>
-</string-array>
+<string name="starting_lineup">先发队员</string>
+<string name="roster">队员</string>
+
+<!-- Login info -->
+<string name="svcba_desc">硅谷华人篮球联赛（SVCBA）自2006年创立以来，历过5个年头，影响迅速扩大，到今天注册会员近千人，已成为湾区华人的最重要体育赛事之一。\n 随着参赛人数的不断增加，参赛队伍规模不断扩大，联赛由最初的三个队双循环比赛发展到十六个参赛队分为A级和B级，B级又分为B1和B2两组的大型复合式日常联赛。\n参加联赛的队伍既有以校友为主体的上海交通大学代表队和台湾交通大学队，又包括以工程师和律师团体为核心的ILG队和TonyXuClub队，参赛 队员从十几岁的青年学生到年近花甲而壮心依旧的老队员，所有球队在每两周固定举行的常规赛中逐队切磋。结束了一周繁忙的工作学习之后，热爱篮球的人们可以组织成球队在不同级别的比赛中活动筋骨磨练技术，这正是SVCBA所秉承的运动，友谊，团结宗旨。每季后还将上演激烈刺激的季后淘汰赛，从热门到黑马悬念 横生，高水平的对决往往引得观者如云。\n 在一季又一季，一周又一周的联赛中，祖籍来自大陆，台湾，港澳以及美国的华人，不分年龄，不分语言，在同一个赛场中 共享运动的快乐，周末的SVCBA比赛已经成了很多人生活中的一个固定项目。队员们也从比赛中相互结识相互了解，从赛场上队友乃至对手变成场下的朋友兄弟。积极向上的体育精神与精诚合作的团队意识从联赛传递到每个球队每名队员，增进海外华人的团结与融合。\n 欢迎华人篮球团体或者篮球爱好者加入联赛，让我们一起把这项精彩的运动带给更多的华人。
+\n \n
+SVCBA 组委会 Email: svcbaboard@gmail.com \n \n
+(App created by Dawei Sun, Tenghui Zhu, Liangjun Jiang)
+</string>
+<string name="login_hint">继续使用本应用，请登录</string>
+<string name="alert_dialog_text_entry">登录/Login</string>
+<string name="alert_dialog_text_hint">SVCBA memebers use the assigned username and password to login.To test drive this app, use guest:guest.</string>
+<string name="alert_dialog_ok">OK</string>
+<string name="alert_dialog_cancel">Cancel</string>
+<string name="alert_diglog_username">Username</string>
+<string name="alert_diglog_password">Password</string>
+
+<!-- help info -->
+<string name="select_player_help">点击队员来加入先发队列,点击先发队员来移除先发,按"menu"添加新队员 </string>
+<string name="normal_help">按"menu"选择"裁判暂停"控制时间</string>
+
+
+
 <string name="spin_prompt_awayteam">客场球队</string>
-<string-array name="team_color_array"><item>深色</item>
-<item>白色</item>
-</string-array>
 <string name="spin_prompt_hometeam_color">主队队服颜色</string>
 <string name="spin_prompt_awayteam_color">客队队服颜色</string>
 <string name="hometeam">主队</string>
@@ -25,20 +36,8 @@
 <string name="game">比赛</string>
 <string name="hometeam_player">主队队员</string>
 <string name="awayteam_player">客队队员</string>
-<string-array name="qinglong_player"><item>李玥</item>
-<item>吕建</item>
-<item>大壮</item>
-<item>John</item>
-<item>Terry</item>
-<item>孙世双</item>
-<item>阎震宇</item>
-<item>邓少伟</item>
-<item>朱腾辉</item>
-<item>章俊良</item>
-<item>何日晖</item>
-<item>钱昊</item>
-<item>青龙</item>
-</string-array>
+
+
 
 <string name="game_quarter">4节，每节12分钟</string>
 <string name="game_quarter_length">节间休息30秒，中场休息2分钟</string>
@@ -47,120 +46,9 @@
 <string name="game_teamfoul_threshold_2">全队半场10次犯规开始2次罚球</string>
 <string name="game_stopwatch">第四节最后两分钟，分差在10分以内，每球停表</string>
 
-<string-array name="linshigong_player">
-<item>王晋</item>
-<item>章程</item>
-<item>刘江侠</item>
-<item>Michael 高</item>
-<item>小赖</item>
-<item>Daniel</item>
-<item>李岩</item>
-<item>Yulin</item>
-<item>姚真</item>
-<item>容鹏</item>
-<item>Joseph</item>
-<item>Liang Bin</item>
-<item>Xiaochang</item>
-<item>临时工</item>
 
-</string-array>
-<string-array name="zhuque_player"><item>邹耀中</item>
-<item>张燕晨</item>
-<item>李风华</item>
-<item>赵燚</item>
-<item>马斌</item>
-<item>左涛</item>
-<item>吴子然</item>
-<item>李涛</item>
-<item>秦汉</item>
-<item>尹继科</item>
-<item>Chang Ko-Fang</item>
-<item>Zhang yue</item>
-<item>张弓 </item>
-<item>刘宜晋</item>
-<item>张玉君</item>
-<item>许晖</item>
-<item>王菊松</item>
-<item>Kevin Wang</item>
-<item>朱雀</item>
-</string-array>
-<string-array name="xuanwu_player"><item>周英</item>
-<item>黎巍</item>
-<item>阿福</item>
-<item>Jerry</item>
-<item>Sean</item>
-<item>Cliff</item>
-<item>赵冰</item>
-<item>姜山</item>
-<item>倪永佳</item>
-<item>Jeff</item>
-<item>Billy</item>
-<item>Pokai</item>
-<item>JJ</item>
-<item>大威</item>
-<item>玄武</item>
-</string-array>
-<string-array name="dijiu_player"><item>黄志勇</item>
-<item>ET - 蒋良俊</item>
-<item>Jimmy</item>
-<item>苗江波</item>
-<item>Alex</item>
-<item>Tony</item>
-<item>傅甄</item>
-<item>陈育林</item>
-<item>吴立其</item>
-<item>俞凌峰</item>
-<item>安依然</item>
-<item>杨杰</item>
-<item>于冰</item>
-<item>唐庆</item>
-<item>马志启</item>
-<item> 李涛</item>
-<item>第九</item>
-</string-array>
-<string-array name="berkeley_player"><item>刘志</item>
-<item>马必武</item>
-<item>赵阳</item>
-<item>曹思未</item>
-<item>钟清</item>
-<item>伊耀樊</item>
-<item>张岩</item>
-<item>周震</item>
-<item>沈灏</item>
-<item>曾立</item>
-<item>Xia Yang</item>
-<item>Cheng Zhenting</item>
-<item>伯克利</item>
-</string-array>
-<string-array name="sjsu_player">
-<item>施凯伦</item>
-<item>Rocky</item>
-<item>唐永翔</item>
-<item>Odom</item>
-<item>BigTom</item>
-<item>蒋启腾</item>
-<item>Henry</item>
-<item>叶騄</item>
-<item>何浩东</item>
-<item>王华</item>
-<item>Jerry</item>
-<item>韩路</item>
-<item>郜萌</item>
-<item>SJSU</item>
-</string-array>
-<string-array name="titan_player"><item>田伯揚</item>
-<item>蔣建宏</item>
-<item>吳曉強</item>
-<item>韓慶勇</item>
-<item>陳俊澤</item>
-<item>吳博文</item>
-<item>簡士智</item>
-<item>林志文</item>
-<item>Kevin</item>
-<item>Will</item>
-<item>王津渝</item>
-<item>泰坦</item>
-</string-array>
+
+<!-- Game info -->
 <string name="quit">退出</string>
 <string name="err_same_color">两队的队服颜色相同</string>
 <string name="err_same_team">参赛的两只队伍选择了同一个队伍</string>
@@ -173,7 +61,9 @@
 <color name="cl_score_lead">#FF0000</color>
 <color name="cl_score_behind">#00FF00</color>
 <string name="timeout">暂停</string>
-<string name="sub">保存</string>
+<string name="sub">替换</string>
+<string name="save">保存</string>
+
 <string name="foul">犯规</string>
 <string name="shoot1">一分投篮</string>
 <string name="shoot2">二分投篮</string>
@@ -219,4 +109,6 @@
 <string name="confirm">确认</string>
 <string name="cancel">取消</string>
 <string name="confirm_action_remove">确定要删除吗?</string>
+<string name="miniSDK">7</string>
+<string name="targetSDK">7</string>
 </resources>

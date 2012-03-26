@@ -4,17 +4,18 @@
 	android:layout_width="fill_parent"
 	android:layout_height="wrap_content"
 >
+<!-- 
 	<ImageView
 		android:id="@+id/list_player_img"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:padding="5px"
-	/>
+	/> -->
 	<TextView
 		android:id="@+id/list_player_name"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:textSize="24px"
+		android:textSize="28px"
 		android:textColor="#FFFFFF"
 	/>
 </LinearLayout>
